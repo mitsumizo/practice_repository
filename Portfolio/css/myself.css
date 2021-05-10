@@ -1,0 +1,58 @@
+.myself_pic {
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    width:  90%;       /* ※縦横を同値に */
+    height: 199%;       /* ※縦横を同値に */
+
+    filter: drop-shadow(0px 0px 5px rgba(160, 160, 160, 0.7));
+}
+
+.box{
+    padding: 0.5em 1em;
+    margin: 90px auto;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.float_box::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.left {
+    display: block;
+    float: left;
+    width: 40%;
+    margin-top: 1%;
+}
+
+.right {
+    display: block;
+    float: right;
+    width: 60%;    
+    margin-top: 6%;
+    padding-left: 5%;
+    
+}
+
+.right li {
+    text-align: left;
+    font-size: 25px;
+    line-height: 90px;
+
+    list-style-type: none;
+}
+
+.right li span {
+    padding-left: 10px;
+    border-left: #5d627b solid 10px;
+    border-bottom: #5d627b solid 1px;
+}
+
+
+.box p {
+    margin: 0; 
+    padding: 0;
+}

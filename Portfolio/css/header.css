@@ -1,0 +1,32 @@
+.cover-img {
+	height: 700px;
+	display: table;
+	width: 100%;
+	background-size: cover;
+	border-bottom: black solid 10px;
+}
+
+/* ワイドスクリーン用のCSS */
+@media only screen and (min-width: 1500px) {
+	.cover-img {
+		height: 800px;
+	}
+}
+
+/* タブレット用のCSS */
+@media only screen and (min-width : 768px) and (max-width : 1200px) {
+	.cover-img {
+		height: 500px;
+	}
+}
+
+.cover-text {
+	display: table-cell;
+	vertical-align: middle;
+    text-align: center;
+
+    font-size: 100px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    font-family: 'Caveat', cursive;
+}

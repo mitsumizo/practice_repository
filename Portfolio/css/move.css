@@ -1,0 +1,24 @@
+.box_move {
+    opacity: 0;
+    visibility: hidden;
+    /* 下：正　右：正 */
+    transform: translateY(40px);
+    /* all : transition対象のcssプロパティ全て(ここでいうと、opacity, visibility, transform) */
+    transition: all 1s;
+}
+.box_move.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.pyonpyon span {
+    animation: pyon 0.2s linear;
+    position: relative;
+}
+
+@keyframes pyon {
+    0% {top: 0}
+    50% {top:-17px}
+    100%{top: 0}
+}

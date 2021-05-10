@@ -1,0 +1,12 @@
+.carousel {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.caption {
+    font-size: large;
+}
+
+.pic {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
